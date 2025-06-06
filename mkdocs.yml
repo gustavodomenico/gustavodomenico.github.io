@@ -1,5 +1,5 @@
 site_name: FX Master Course
-site_url: https://fx-master-site.com
+site_url: https://gustavodomenico.github.io/fx-master-course/
 theme:
   name: material
   language: pt
@@ -9,10 +9,10 @@ nav:
 extra:
   alternate:
     - name: Portuguese
-      link: /pt/ 
+      link: pt/ 
       lang: pt
     - name: English
-      link: /en/
+      link: en/
       lang: en
 plugins:
   - redirects:
