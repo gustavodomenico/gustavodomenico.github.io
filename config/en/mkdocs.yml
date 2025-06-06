@@ -1,7 +1,7 @@
 site_name: FX Master Course
 site_url: https://gustavodomenico.github.io/fx-master-course/
 docs_dir: '../../docs/en'                           
-site_dir: '../../generated/en'    
+site_dir: '../../s/en'    
 
 theme:
   name: material
