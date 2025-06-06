@@ -14,12 +14,8 @@ nav:
 extra:
   alternate:
     - name: Portuguese
-      link: pt/ 
+      link: ../pt/ 
       lang: pt
     - name: English
-      link: en/
+      link: ../en/
       lang: en
-plugins:
-  - redirects:
-      redirect_maps:
-        'index.md': 'pt/index.md'
