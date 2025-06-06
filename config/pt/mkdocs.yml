@@ -1,7 +1,7 @@
 site_name: FX Tutorial
 site_url: https://gustavodomenico.github.io/
 docs_dir: '../../docs/pt'                           
-site_dir: '../../s/pt'    
+site_dir: '../../r/pt'    
 
 theme:
   name: material
@@ -10,11 +10,7 @@ theme:
   features:
     - navigation.expand
 nav:
-  - Introdução: pt/index.md
-  - Operações: pt/operations.md
-  - User Guide:
-    - Writing your docs: writing-your-docs.md
-    - Styling your docs: styling-your-docs.md
+  - Introdução: index.md
 extra:
   alternate:
     - name: Portuguese

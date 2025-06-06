@@ -17,3 +17,10 @@ mkdocs build -q -f config/pt/mkdocs.yml >> /dev/null
 
 echo -e "${BLUE}Build completed successfully!${NC}"
 echo -e "Documentation is available in the ${GREEN}s${NC} directory" 
+
+echo -e "${GREEN}Push changes to remote.!${NC}"
+git add .
+git commit -m "Update repository."
+git push origin main
+
+echo -e "${BLUE}Code pushed!${NC}"
