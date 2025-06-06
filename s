@@ -8,19 +8,19 @@ NC='\033[0m' # No Color
 # Check if language argument is provided
 if [ -z "$1" ]; then
     echo -e "${RED}Error: Language argument is required${NC}"
-    echo "Usage: ./build.sh [en|pt]"
+    echo "Usage: ./s [en|pt]"
     exit 1
 fi
 
 # Validate language argument
 if [ "$1" != "en" ] && [ "$1" != "pt" ]; then
     echo -e "${RED}Error: Invalid language argument${NC}"
-    echo "Usage: ./build.sh [en|pt]"
+    echo "Usage: ./s [en|pt]"
     exit 1
 fi
 
 # Set configuration file based on language
-CONFIG_FILE="config/$1/mkdocs.yml"
+CONFIG_FILE="src/config/$1/mkdocs.yml"
 
 # Check if config file exists
 if [ ! -f "$CONFIG_FILE" ]; then

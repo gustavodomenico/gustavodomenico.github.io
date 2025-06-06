@@ -9,11 +9,11 @@ echo -e "${BLUE}Starting documentation build process...${NC}"
 
 # Build English documentation
 echo -e "${GREEN}Building English documentation...${NC}"
-mkdocs build -q -f config/en/mkdocs.yml >> /dev/null
+mkdocs build -q -f src/config/en/mkdocs.yml >> /dev/null
 
 # Build Portuguese documentation
 echo -e "${GREEN}Building Portuguese documentation...${NC}"
-mkdocs build -q -f config/pt/mkdocs.yml >> /dev/null
+mkdocs build -q -f src/config/pt/mkdocs.yml >> /dev/null
 
 echo -e "${BLUE}Build completed successfully!${NC}"
 echo -e "Documentation is available in the ${GREEN}s${NC} directory" 
