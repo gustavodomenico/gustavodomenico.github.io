@@ -14,8 +14,8 @@ nav:
 extra:
   alternate:
     - name: Portuguese
-      link: ../pt/ 
+      link: https://gustavodomenico.github.io/r/pt/
       lang: pt
     - name: English
-      link: ../en/
+      link: https://gustavodomenico.github.io/r/en/
       lang: en
