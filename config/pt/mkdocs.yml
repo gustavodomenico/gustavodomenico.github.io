@@ -1,0 +1,29 @@
+site_name: FX Master Course
+site_url: https://gustavodomenico.github.io/fx-master-course/
+docs_dir: '../../docs/pt'                           
+site_dir: '../../generated/pt'    
+
+theme:
+  name: material
+  language: pt
+  include_homepage_in_sidebar: false
+  features:
+    - navigation.expand
+nav:
+  - Introdução: pt/index.md
+  - Operações: pt/operations.md
+  - User Guide:
+    - Writing your docs: writing-your-docs.md
+    - Styling your docs: styling-your-docs.md
+extra:
+  alternate:
+    - name: Portuguese
+      link: pt/ 
+      lang: pt
+    - name: English
+      link: en/
+      lang: en
+plugins:
+  - redirects:
+      redirect_maps:
+        'index.md': 'pt/index.md'
