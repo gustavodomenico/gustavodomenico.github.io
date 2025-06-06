@@ -5,6 +5,15 @@ GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
+# Check if --no-git flag is present
+SKIP_GIT=false
+for arg in "$@"; do
+    if [ "$arg" = "-n" ]; then
+        SKIP_GIT=true
+        break
+    fi
+done
+
 echo -e "${BLUE}Starting documentation build process...${NC}"
 
 # Build English documentation
@@ -18,9 +27,12 @@ mkdocs build -q -f src/config/pt/mkdocs.yml >> /dev/null
 echo -e "${BLUE}Build completed successfully!${NC}"
 echo -e "Documentation is available in the ${GREEN}s${NC} directory" 
 
-echo -e "${GREEN}Push changes to remote.!${NC}"
-git add .
-git commit -m "Update repository."
-git push origin main
-
-echo -e "${BLUE}Code pushed!${NC}"
+if [ "$SKIP_GIT" = false ]; then
+    echo -e "${GREEN}Push changes to remote.!${NC}"
+    git add .
+    git commit -m "Update repository."
+    git push origin main
+    echo -e "${BLUE}Code pushed!${NC}"
+else
+    echo -e "${BLUE}Git commands skipped as requested.${NC}"
+fi

@@ -1,0 +1,21 @@
+site_name: FX Tutorial
+site_url: https://gustavodomenico.github.io/
+docs_dir: '../../docs/pt'                           
+site_dir: '../../../pt'    
+
+theme:
+  name: material
+  language: pt
+  include_homepage_in_sidebar: false
+  features:
+    - navigation.expand
+nav:
+  - Introdução: index.md
+extra:
+  alternate:
+    - name: Portuguese
+      link: https://gustavodomenico.github.io/pt/
+      lang: pt
+    - name: English
+      link: https://gustavodomenico.github.io/en/
+      lang: en
