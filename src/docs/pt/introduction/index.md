@@ -8,6 +8,8 @@ O Dólar Americano (USD) domina o cenário global por ser a principal moeda de r
 
 No Brasil, o mercado de câmbio é o sistema onde o Real (BRL) é trocado por moedas estrangeiras. Rigidamente regulado pelo Banco Central (BACEN), ele se organiza em segmentos como o comercial (para comércio e finanças) e o turismo (para pessoas físicas). Embora o dólar americano domine as transações, outras moedas também são negociadas. 
 
+### Ingressos e Remessas
+
 ### Mercado de Câmbio Brasileiro vs. Global
 
 | Característica | Mercado de Câmbio Brasileiro | Mercado de Câmbio Global |

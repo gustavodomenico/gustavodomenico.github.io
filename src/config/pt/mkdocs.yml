@@ -12,6 +12,7 @@ theme:
 nav:
   - Introdução: 
     - Definição: introduction/index.md
+    - Ingressos e Remessas: introduction/currency-flow.md
     - Negociação: introduction/negotiation.md
 extra:
   alternate:
