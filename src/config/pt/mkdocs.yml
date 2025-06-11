@@ -1,6 +1,6 @@
 site_name: FX Tutorial
 site_url: https://gustavodomenico.github.io/
-docs_dir: '../../docs/pt'                           
+docs_dir: '../../docs/pt/'                           
 site_dir: '../../../pt'    
 
 theme:
@@ -11,8 +11,8 @@ theme:
     - navigation.expand
 nav:
   - Introdução: 
-    - Definição: index.md
-    - Negociação: negotiation.md
+    - Definição: introduction/index.md
+    - Negociação: introduction/negotiation.md
 extra:
   alternate:
     - name: Portuguese
@@ -21,6 +21,5 @@ extra:
     - name: English
       link: https://gustavodomenico.github.io/en/
       lang: en
-
 extra_css:
   - css/custom.css
