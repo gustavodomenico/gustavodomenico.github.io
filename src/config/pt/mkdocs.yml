@@ -10,7 +10,9 @@ theme:
   features:
     - navigation.expand
 nav:
-  - Introdução: index.md
+  - Introdução: 
+    - Definição: index.md
+    - Negociação: negotiation.md
 extra:
   alternate:
     - name: Portuguese
@@ -19,3 +21,6 @@ extra:
     - name: English
       link: https://gustavodomenico.github.io/en/
       lang: en
+
+extra_css:
+  - css/custom.css
