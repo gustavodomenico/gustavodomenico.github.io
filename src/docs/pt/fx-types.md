@@ -79,3 +79,4 @@ Para se proteger, a empresa contata seu banco e "trava" hoje uma taxa de venda f
 
 Daqui a 90 dias, independentemente do valor do dólar no mercado, a empresa receberá os R$ 5.350.000 acordados. Ela eliminou o risco da variação cambial e garantiu uma receita previsível.
 
+_Nota: vamos abordar mais o assunto de câmbio futuro e hedging em seções posteriores._

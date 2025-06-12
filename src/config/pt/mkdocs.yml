@@ -15,6 +15,13 @@ nav:
     - Ingressos e Remessas: introduction/currency-flow.md
     - Negociação: introduction/negotiation.md
   - Tipos e Modalidades: fx-types.md
+  - Risco Cambial:
+    - Fundamentos: risk/fundamentals.md
+    - Instrumentos de Hedge: risk/hedging.md
+    - Tesouraria corporativa: risk/corporate-treasury.md
+    - Transferência de Risco: risk/risk-transfer.md
+  - Casos de uso: use-cases.md
+
 extra:
   alternate:
     - name: Portuguese
