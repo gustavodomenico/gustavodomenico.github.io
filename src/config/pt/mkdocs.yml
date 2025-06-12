@@ -14,7 +14,7 @@ nav:
     - Definição: introduction/index.md
     - Ingressos e Remessas: introduction/currency-flow.md
     - Negociação: introduction/negotiation.md
-  - Taxas, Tipos e Modalidades: fx-types.md
+  - Tipos e Modalidades: fx-types.md
 extra:
   alternate:
     - name: Portuguese
