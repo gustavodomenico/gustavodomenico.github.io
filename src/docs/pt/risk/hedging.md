@@ -14,7 +14,7 @@ Na prática, é muito raro a empresa conseguir casar os **volumes** e **prazos**
 
 Enquanto o Câmbio Pronto atende a necessidades imediatas, o Câmbio Futuro é a principal ferramenta para empresas que precisam de previsibilidade e segurança para suas operações que serão liquidadas no futuro.
 
-Formalmente falando, e também conhecido como Contrato a Termo (Forward), o Câmbio Futuro é um contrato financeiro vinculativo entre uma empresa e uma instituição financeira. Nele, as partes se comprometem a comprar ou vender uma quantia específica de moeda estrangeira em uma **data futura** (qualquer prazo acima de 2 dias úteis), a uma **taxa de câmbio pré-definida hoje**.
+Formalmente falando, e também conhecido como Forward, o Câmbio Futuro é um contrato financeiro vinculativo entre uma empresa e uma instituição financeira. Nele, as partes se comprometem a comprar ou vender uma quantia específica de moeda estrangeira em uma **data futura** (qualquer prazo acima de 2 dias úteis), a uma **taxa de câmbio pré-definida hoje**.
 
 O funcionamento da operação pode ser dividida em duas estapas:
 
@@ -63,5 +63,43 @@ Observa que **independente do cenário**, a empresa importadora manteve a taxa d
 
 ## Opções
 
+Uma opção é um contrato que dá ao seu comprador o **direito**, mas **não a obrigação**, de comprar ou vender uma moeda a um preço pré-determinado em uma data futura. Essa diferença entre direito e obrigação é o que torna as opções uma ferramenta distinta de outros instrumentos de hedge, como o contrato a termo (NDF) ou o contrato futuro.
+
+Existem três elementos principais ao negociar opções:
+
+* **Prêmio**: É o **custo da opção**, ou seja, o valor que o comprador paga para adquirir o direito.
+* **Preço do exercício (strike price)**: É basicamente a **taxa de câmbio pré-acordada** no contrato.
+* **Data de vencimento**: É a **data limite** que o comprador tem para exercer o direito.
+
+### Estudo de caso - Opção de Compra
+
+* **Cenário**: Um **importador** que precisa pagar US$ 100.000 em 90 dias, com o dólar a R$ 5,20, teme que a cotação suba para R$ 5,50.
+* **Ação**: Ele compra uma opção de compra (call option) com strike de R$ 5,25 e paga um prêmio por isso.
+* **Resultado em que o Dólar sobe para R$ 5,50**: O importador **exerce seu direito** e compra os dólares a R$ 5,25, economizando R$ 0,25 por dólar. Seu custo máximo ficou travado.
+* **Resultado em que o Dólar cai para R$ 5,10**: O importador **não exerce seu direito** (seria mais caro) e simplesmente compra os dólares no mercado à vista por R$ 5,10. Ele se beneficia da queda e sua única "perda" foi o prêmio pago pela opção.
+
+### Estudo de caso - Opção de Venda
+
+* **Cenário**: Um **exportador** que irá receber US$ 100.000 em 90 dias, com o dólar a R$ 5,20, teme que a cotação caia para R$ 5,00.
+* **Ação**: Ele compra uma opção de venda (put option) com strike de R$ 5,15 e paga um prêmio por isso.
+* **Resultado em que o Dólar cai para R$ 5,00**: O exportador exerce seu direito e vende seus dólares a R$ 5,15, garantindo uma receita maior. Sua receita mínima ficou travada.
+* **Resultado em que o Dólar sobe para R$ 5,40**: O exportador não exerce seu direito e vende seus dólares no mercado à vista por R$ 5,40, aproveitando a alta. Sua única "perda" foi o prêmio pago.
+
 ## Swap cambial
 
+O Swap, no mercado financeiro, é literalmente um contrato entre duas partes que concordam em **trocar** fluxos de caixa futuros com base em indexadores diferentes. Pensando no contexto cambial, Swap é usado para se proteger contra a variação de uma moeda estrangeira, como o dólar. A **troca** geralmente envolve a variação cambial de um lado e uma taxa de juros (como o CDI) do outro.
+
+#### Estudo de caso
+
+* **Cenário**: Uma exportadora com US$ 1 milhão a receber com taxa de câmbio pronto de R$ 5,20 em 90 dias com uma receita potencial de R$ 5.200.000.
+* **Ação**: A empresa faz um **swap cambial** com um banco trocando a taxa de câmbio por uma taxa fixa de 5,1%.
+* **Resultado em que o Dólar sobre para R$ 5,50**: 
+    * Na venda do dólar por R$ 5,50, ele ganha +R$ 300.000.
+    * No swap, ele **paga os R$ 300.000** da variação ao banco e **recebe os R$ 265.200** da taxa fixa (5,1%).
+    * Resultado Final: R$ 5.465.200
+* **Resultado em que o Dólar cai para R$ 4,90**:
+    * Na venda física, ele perde -R$ 300.000.
+    * No swap, ele **recebe R$ 300.000** da variação e também **recebe os R$ 265.200** da taxa fixa (5,1%).
+    * Resultado Final: R$ 5.465.200
+
+Observa que nos dois casos, o resultado foi travado, eliminando o risco cambial.
