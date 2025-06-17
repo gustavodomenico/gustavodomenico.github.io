@@ -48,5 +48,5 @@ Observa que a partir da assinatura do contrato até o dia do recebimento do dinh
 
 #### Conclusão
 
-Embora o cenário B parece ótimo para a empresa, ambos os cenários mostram o problema central relacionado ao risco cambial: **a incerteza**. É para eliminar a incerteza que as empresas recorrem aos instrumentos de hedge da próxima seção.
+Embora o cenário B parece ótimo para a empresa, ambos os cenários mostram o problema central relacionado ao risco cambial: **a incerteza**. É para eliminar a incerteza que as empresas recorrem aos derivativos para hedge cambial da próxima seção.
 
