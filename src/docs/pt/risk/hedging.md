@@ -103,3 +103,9 @@ O Swap, no mercado financeiro, é literalmente um contrato entre duas partes que
     * Resultado Final: R$ 5.465.200
 
 Observa que nos dois casos, o resultado foi travado, eliminando o risco cambial.
+
+## Conclusão
+
+Ao fazer um hedge, a empresa troca um ganho potencial por proteção contra uma perda desastrosa. Cada instrumento oferece um balanço 
+diferente entre custo, flexibilidade e obrigação, adaptando-se a cada necessidade. No fim, o hedge permite que a gestão foque no seu negócio principal, 
+em vez de especular sobre os rumos do mercado.
