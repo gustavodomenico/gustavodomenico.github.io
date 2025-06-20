@@ -11,10 +11,13 @@ theme:
     - navigation.expand
 nav:
   - Introdução: 
-    - Definição: introduction/index.md
+    - Definição: introduction/index.md   
     - Ingressos e Remessas: introduction/currency-flow.md
-    - Negociação: introduction/negotiation.md
-  - Tipos e Modalidades: fx-types.md
+  - Mercado de Câmbio:
+    - Negociação: fx-market/negotiation.md
+    - Estrutura do Mercado: fx-market/market-structure.md
+    - Tipos e Modalidades: fx-market/fx-types.md
+    - Papel do Banco Central: fx-market/central-bank.md
   - Risco Cambial:
     - Fundamentos: risk/fundamentals.md
     - Derivativos para Hedge Cambial: risk/hedging.md
