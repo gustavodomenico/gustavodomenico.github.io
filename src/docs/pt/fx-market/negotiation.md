@@ -2,7 +2,7 @@
 
 ## Participantes do mercado
 
-1. Banco Central: É o órgão regulador. Ele pode intervir para comprar ou vender moedas a fim de controlar grandes oscilações e garantir a estabilidade do mercado.
+1. Banco Central: Ele é o órgão regulador e pode intervir para comprar ou vender moedas a fim de controlar grandes oscilações e garantir a estabilidade do mercado - o papel dele será explorado na seção seguinte.
 1. Instituições Financeiras: Bancos, corretoras e casas de câmbio são as únicas autorizadas a realizar operações de câmbio para o público e para empresas.
 1. Empresas: Principalmente importadoras e exportadoras, que precisam converter moedas para pagar por produtos ou receber por vendas.
 1. Pessoas Físicas: Para finalidades como turismo, manutenção de residentes no exterior, investimentos ou recebimento de valores de outros países.
