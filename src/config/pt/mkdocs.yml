@@ -24,6 +24,9 @@ nav:
     - Derivativos para Hedge Cambial: risk/hedging.md
     - Tesouraria corporativa: risk/corporate-treasury.md
     - Transferência de Risco: risk/risk-transfer.md
+  - Estrutura Regulatória:
+    - Marco Legal Cambial: regulatory/fx-landmark.md
+    - PLD/CFT e KYC: regulatory/compliance.md
   - Casos de uso: use-cases.md
 
 extra:
