@@ -27,7 +27,11 @@ nav:
   - Estrutura Regulatória:
     - Marco Legal Cambial: regulatory/fx-landmark.md
     - PLD/CFT e KYC: regulatory/compliance.md
-  - Casos de uso: use-cases.md
+  - Tópicos Especiais: 
+    - Conta de não residente: nra.md
+    - eFX: efx.md
+    - Trade Finance: trade-finance.md
+    - Real digital (DREX): drex.md
 
 extra:
   alternate:

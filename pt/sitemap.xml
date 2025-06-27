@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://gustavodomenico.github.io/use-cases/</loc>
-         <lastmod>2025-06-27</lastmod>
-    </url>
-    <url>
          <loc>https://gustavodomenico.github.io/fx-market/central-bank/</loc>
          <lastmod>2025-06-27</lastmod>
     </url>
@@ -50,6 +46,10 @@
     </url>
     <url>
          <loc>https://gustavodomenico.github.io/risk/risk-transfer/</loc>
+         <lastmod>2025-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://gustavodomenico.github.io/special-topics/nra/</loc>
          <lastmod>2025-06-27</lastmod>
     </url>
 </urlset>
