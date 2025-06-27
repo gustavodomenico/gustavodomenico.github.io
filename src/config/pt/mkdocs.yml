@@ -28,10 +28,11 @@ nav:
     - Marco Legal Cambial: regulatory/fx-landmark.md
     - PLD/CFT e KYC: regulatory/compliance.md
   - Tópicos Especiais: 
-    - Conta de não residente: nra.md
-    - eFX: efx.md
-    - Trade Finance: trade-finance.md
-    - Real digital (DREX): drex.md
+    - Conta de não residente: special-topics/nra.md
+    - eFX: special-topics/efx.md
+    - Trade Finance: special-topics/trade-finance.md
+    - Rede SWIFT: special-topics/swift.md
+    - Moedas digitais: special-topics/stablecoins.md
 
 extra:
   alternate:
