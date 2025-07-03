@@ -44,5 +44,8 @@ extra:
     - name: English
       link: https://gustavodomenico.github.io/en/
       lang: en
+  analytics:
+    provider: google
+    property: G-V6D6RR5X6P
 extra_css:
   - css/custom.css
