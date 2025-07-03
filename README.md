@@ -1,1 +1,69 @@
-TESTR
+# FX Trading 101 Tutorial
+
+Welcome to the FX Trading 101 tutorial! This project provides comprehensive documentation about the FX (foreign exchange) market, available in both Portuguese and English.
+
+## How to Contribute
+
+Contributions are welcome:
+
+1. **Fork this repository** and create a new branch for your changes.
+2. **Edit or add content** in the appropriate language directory (`src/docs/pt` for Portuguese, `src/docs/en` for English).
+3. **Keep translations in sync**: If you add or update content in one language, please update the corresponding file in the other language as well, or open an issue to request translation help.
+4. **Follow the structure**: Use the existing directory and file structure for new topics. Update the navigation in the appropriate `mkdocs.yml` file under `src/config/pt/` or `src/config/en/` if you add new pages.
+5. **Open a Pull Request**: Describe your changes and reference any related issues.
+
+## How to Set Up MkDocs Locally
+
+To work with this project locally, you need to have [Python](https://www.python.org/) and [pip](https://pip.pypa.io/en/stable/) installed on your system. Then, install MkDocs and the required dependencies:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/your-repo.git
+   cd your-repo
+   ```
+1. **Install MkDocs and dependencies:**
+   ```bash
+   pip install mkdocs mkdocs-material pymdown-extensions
+   ```
+   You may also need to install any other dependencies listed in a `requirements.txt` file if present:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+1. **Verify installation:**
+   ```bash
+   mkdocs --version
+   ```
+   You should see the installed MkDocs version.
+
+Now you can use the `build` and `serve` scripts as described below to build or serve the documentation.
+
+## Building and Serving the Site
+
+This project uses [MkDocs](https://www.mkdocs.org/) with the Material theme. Two scripts are provided for convenience:
+
+- **`build` script**: Builds the static site for deployment, using the MkDocs structure. It will generate the site for both Portuguese and English.
+- **`serve` script**: Serves the site locally for development. You can specify the language (`pt` or `en`) to preview the documentation in that language.
+
+### Example Usage
+
+To build the site:
+```bash
+./build
+```
+
+To serve the site locally in Portuguese:
+```bash
+./server pt
+```
+
+To serve the site locally in English:
+```bash
+./server en
+```
+
+The language can be selected using the menu located next to the search box at the top of the page.
+
+---
+
+Feel free to open issues or pull requests for suggestions, corrections, or new topics!
