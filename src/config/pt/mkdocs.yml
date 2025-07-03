@@ -11,7 +11,7 @@ theme:
     - navigation.expand
 nav:
   - Introdução: 
-    - Definição: introduction/index.md   
+    - Definição: introduction/definition.md   
     - Ingressos e Remessas: introduction/currency-flow.md
   - Mercado de Câmbio:
     - Negociação: fx-market/negotiation.md
@@ -37,10 +37,10 @@ nav:
 extra:
   alternate:
     - name: Portuguese
-      link: https://gustavodomenico.github.io/pt/introduction
+      link: https://gustavodomenico.github.io/pt/
       lang: pt
     - name: English
-      link: https://gustavodomenico.github.io/en/introduction
+      link: https://gustavodomenico.github.io/en/
       lang: en
 extra_css:
   - css/custom.css

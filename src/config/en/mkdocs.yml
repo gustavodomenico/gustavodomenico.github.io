@@ -11,7 +11,7 @@ theme:
     - navigation.expand
 nav:
   - Introduction:
-      - Definition: introduction/index.md
+      - Definition: introduction/definition.md
       - Inflows and Outflows: introduction/currency-flow.md
   - FX Market:
       - Negotiation: fx-market/negotiation.md
@@ -37,10 +37,16 @@ nav:
 extra:
   alternate:
     - name: Portuguese
-      link: https://gustavodomenico.github.io/pt/introduction
+      link: https://gustavodomenico.github.io/pt/
       lang: pt
     - name: English
-      link: https://gustavodomenico.github.io/en/introduction
+      link: https://gustavodomenico.github.io/en/
       lang: en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 extra_css:
   - css/custom.css
