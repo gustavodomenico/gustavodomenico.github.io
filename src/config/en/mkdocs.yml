@@ -10,7 +10,30 @@ theme:
   features:
     - navigation.expand
 nav:
-  - Introdução: index.md
+  - Introduction:
+      - Definition: introduction/index.md
+      - Inflows and Outflows: introduction/currency-flow.md
+  - FX Market:
+      - Negotiation: fx-market/negotiation.md
+      - Central Bank of Brazil: fx-market/central-bank.md
+      - Market Structure: fx-market/market-structure.md
+      - Types and Modalities: fx-market/fx-types.md
+      - Role of the Central Bank: fx-market/central-bank.md
+  - FX Risk:
+      - Fundamentals: risk/fundamentals.md
+      - Derivatives for FX Hedging: risk/hedging.md
+      - Corporate Treasury: risk/corporate-treasury.md
+      - Risk Transfer: risk/risk-transfer.md
+  - Regulatory Framework:
+      - FX Legal Landmark: regulatory/fx-landmark.md
+      - AML/CFT and KYC: regulatory/compliance.md
+  - Special Topics:
+      - Non-resident Account: special-topics/nra.md
+      - eFX: special-topics/efx.md
+      - Trade Finance: special-topics/trade-finance.md
+      - SWIFT Network: special-topics/swift.md
+      - Digital Currencies: special-topics/stablecoins.md
+
 extra:
   alternate:
     - name: Portuguese
@@ -19,3 +42,5 @@ extra:
     - name: English
       link: https://gustavodomenico.github.io/en/
       lang: en
+extra_css:
+  - css/custom.css

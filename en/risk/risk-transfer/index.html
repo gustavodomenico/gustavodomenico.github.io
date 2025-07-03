@@ -1,0 +1,1323 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gustavodomenico.github.io/risk/risk-transfer/">
+      
+      
+        <link rel="prev" href="../corporate-treasury/">
+      
+      
+        <link rel="next" href="../../regulatory/fx-landmark/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Risk Transfer - FX Trading 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#operations-book-booking" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FX Trading 101" class="md-header__button md-logo" aria-label="FX Trading 101" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FX Trading 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Risk Transfer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="https://gustavodomenico.github.io/pt/" hreflang="pt" class="md-select__link">
+              Portuguese
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://gustavodomenico.github.io/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FX Trading 101" class="md-nav__button md-logo" aria-label="FX Trading 101" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FX Trading 101
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Definition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/currency-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inflows and Outflows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    FX Market
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            FX Market
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/negotiation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Negotiation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/central-bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Central Bank of Brazil
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/market-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Market Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/fx-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Types and Modalities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/central-bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Central Bank of Brazil
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    FX Risk
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            FX Risk
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hedging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Derivatives for FX Hedging
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../corporate-treasury/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Corporate Treasury
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Risk Transfer
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Risk Transfer
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operations-book-booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations Book (Booking)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-of-b3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role of B3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#futures-contract-as-a-hedge-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Futures Contract as a Hedge Tool
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collateral-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collateral System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Collateral System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-mechanisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Mechanisms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-case-banco-alfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Case - Banco Alfa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Use Case - Banco Alfa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consolidation-of-risk-in-the-operations-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consolidation of Risk in the Operations Book
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neutralization-via-futures-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neutralization via Futures Contracts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#margin-deposit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Margin Deposit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#position-management-and-daily-adjustment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Position Management and Daily Adjustment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#margin-call-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Margin Call Execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Result
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Regulatory Framework
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Regulatory Framework
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regulatory/fx-landmark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FX Legal Landmark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regulatory/compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AML/CFT and KYC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Special Topics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Special Topics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../special-topics/nra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Non-resident Account
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../special-topics/efx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    eFX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../special-topics/trade-finance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trade Finance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../special-topics/swift/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SWIFT Network
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../special-topics/stablecoins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Digital Currencies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operations-book-booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations Book (Booking)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-of-b3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role of B3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#futures-contract-as-a-hedge-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Futures Contract as a Hedge Tool
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collateral-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collateral System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Collateral System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-mechanisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Mechanisms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-case-banco-alfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Case - Banco Alfa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Use Case - Banco Alfa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consolidation-of-risk-in-the-operations-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consolidation of Risk in the Operations Book
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neutralization-via-futures-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neutralization via Futures Contracts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#margin-deposit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Margin Deposit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#position-management-and-daily-adjustment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Position Management and Daily Adjustment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#margin-call-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Margin Call Execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Result
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Risk Transfer</h1>
+
+<p>Risk transfer is the process by which a financial institution operating in foreign exchange passes its exposure to exchange rate fluctuations to the financial market, protecting its capital. This is done using a set of tools and mechanisms from the organized market, mainly from B3.</p>
+<h2 id="operations-book-booking">Operations Book (Booking)</h2>
+<p>The "book" is the consolidation of <strong>all foreign exchange operations</strong> carried out by the institution. It determines the institution's final net exposure, which can be:</p>
+<ul>
+<li><strong>Long Position</strong>: The institution bought more foreign currency than it sold - profits from a rise in the exchange rate.</li>
+<li><strong>Short Position</strong>: The institution sold more foreign currency than it bought - profits from a fall in the exchange rate.</li>
+</ul>
+<p>The book is the starting point for risk management, as it quantifies the size and direction of the risk to be managed.</p>
+<h2 id="role-of-b3">Role of B3</h2>
+<p>B3 (the Brazilian Stock Exchange) acts as a <strong>central guarantor</strong> for all futures operations. Instead of trading with an unknown participant, the institution <strong>trades directly with B3</strong>, which is responsible for ensuring that the contract will be fulfilled. In practice, this eliminates the risk of counterparty default, bringing security to all involved.</p>
+<p>This security offered by B3 attracts many traders, which creates <strong>high liquidity in the market</strong>. Liquidity is the ability to buy or sell large volumes quickly, without affecting the asset's price. This liquidity is actively maintained by <strong>Liquidity Providers</strong>, institutions that continuously offer buy and sell orders. Their presence ensures that a bank can execute its hedge of millions of dollars instantly and at a fair price.</p>
+<h2 id="futures-contract-as-a-hedge-tool">Futures Contract as a Hedge Tool</h2>
+<p>The dollar futures contract, traded on B3, is the main tool that the institution uses to hedge its risk. As a standardized, liquid, and transparent instrument, it allows the institution to quickly and efficiently create a position opposite to its book. If the book is <strong>long in dollars</strong>, the institution <strong>sells futures</strong>; if the book is <strong>short</strong>, the institution <strong>buys futures</strong>, thus neutralizing its directional exposure to exchange rates.</p>
+<h2 id="collateral-system">Collateral System</h2>
+<p>To trade futures contracts, B3 requires the institution (and all participants) to deposit a <strong>margin</strong>. This margin is <strong>collateral</strong> (in cash or government bonds) that acts as a guarantee, ensuring that the participant can cover any losses. It is a fundamental pillar to mitigate credit risk among participants and <strong>ensure market integrity</strong>.</p>
+<h3 id="security-mechanisms">Security Mechanisms</h3>
+<p>These are the dynamic components that make the collateral system effective in real time:</p>
+<ul>
+<li>
+<p><strong>Daily Adjustment</strong>: Every day, B3 calculates the gains or losses of each futures position and credits or debits these amounts directly to the participants' margin accounts. This prevents the accumulation of large unrealized losses, forcing the financial settlement of positions day by day.</p>
+</li>
+<li>
+<p><strong>Margin Call</strong>: If the daily adjustment debits bring a participant's margin account below the required minimum level, B3 issues a "call." This is an order for the participant to deposit new collateral to cover the loss and restore their margin. It is the enforcement mechanism that ensures the system always remains secure and capitalized.</p>
+</li>
+</ul>
+<h2 id="use-case-banco-alfa">Use Case - Banco Alfa</h2>
+<p>It is complex to imagine the scenario where all the above topics are put into practice in a sequence of actions correlated to events within the financial institution. So, observe a use case of a fictitious foreign exchange bank:</p>
+<ul>
+<li><strong>Participant</strong>: Banco Alfa</li>
+<li><strong>Date</strong>: Friday, March 20, 2024.</li>
+<li><strong>Bank's Risk Policy</strong>: Maximum foreign exchange exposure limit of <strong>US$ 5 million</strong>.</li>
+<li><strong>B3 Parameters</strong>: Requirement of <strong>10% initial margin</strong>; <strong>maintenance margin level at 75%</strong> of the initial margin.</li>
+</ul>
+<h3 id="consolidation-of-risk-in-the-operations-book">Consolidation of Risk in the Operations Book</h3>
+<p>At the end of <strong>Friday</strong>, adding up all operations, Banco Alfa finds that it bought a total of US$ 52 million and sold a total of US$ 32 million. That is, it has a <strong>long position of US$ 20 million</strong>.</p>
+<p>Thus, the bank is <strong>above its risk limit</strong> (US$ 5M) by US$ 15 million and needs to <strong>neutralize this excess risk</strong>.</p>
+<h3 id="neutralization-via-futures-contracts">Neutralization via Futures Contracts</h3>
+<p>Banco Alfa's Trading Desk receives the order to reduce exposure.</p>
+<ul>
+<li><strong>Action</strong>: The trader executes a <strong>sell order</strong> for dollar futures contracts on B3 in the amount of <strong>US$ 15 million</strong>.</li>
+<li><strong>Result</strong>: The bank's net exposure becomes US$ 20M (physical) - US$ 15M (futures) = US$ 5M, staying <strong>within the allowed limit</strong>.</li>
+</ul>
+<h3 id="margin-deposit">Margin Deposit</h3>
+<p>However, to validate the futures sale operation from the previous section, the treasury <strong>needs to allocate the required margin (10%)</strong> demanded by B3.</p>
+<ul>
+<li><strong>Calculation</strong>: With an exchange rate of R$ 5.00, the contract value is R$ 75 million (15M * 5.00) and the initial margin of 10% corresponds to <strong>R$ 7.5 million</strong>.</li>
+<li><strong>Action</strong>: Banco Alfa allocates <strong>R$ 7.5 million in Federal Government Bonds</strong> in its B3 account.</li>
+</ul>
+<h3 id="position-management-and-daily-adjustment">Position Management and Daily Adjustment</h3>
+<p>On the following Monday, the dollar rises 2% above R$ 5.00, and the <strong>bank's short position</strong> in the futures market <strong>generates a loss</strong>.</p>
+<ul>
+<li><strong>Loss Calculation</strong>: 2% of R$ 75 million = R$ 1,500,000.</li>
+<li><strong>B3 Action</strong>: At the end of the day, B3 debits R$ 1,500,000 from the bank's margin account - the <strong>collateral balance drops to R$ 6.00 million</strong>.</li>
+</ul>
+<h3 id="margin-call-execution">Margin Call Execution</h3>
+<p>On Tuesday, the dollar rises another 2%, generating a new loss of R$ 1,500,000.</p>
+<ul>
+<li><strong>New Margin Balance</strong>: R$ 6,000,000 - R$ 1,500,000 = R$ 4,500,000.</li>
+<li>
+<p><strong>Trigger Check</strong>: B3 calculates the minimum maintenance level: 75% of R$ 7.5 million = R$ 5,625,000.</p>
+</li>
+<li>
+<p><strong>Margin Call</strong>: Since the current balance (R$ 4.5M) is <strong>below the maintenance level (R$ 5.625M)</strong>, B3 issues the call and Banco Alfa needs to <strong>deposit the total accumulated loss</strong>, which is R$ 3,000,000 (1.5M + 1.5M), to restore the margin to its initial value (7.5M). The treasury executes the transfer, and the bank's hedge position remains safe and valid.</p>
+</li>
+</ul>
+<h3 id="final-result">Final Result</h3>
+<ul>
+<li>
+<p><strong>What happened in the market?</strong> The dollar rose sharply.</p>
+</li>
+<li>
+<p><strong>What happened to the Hedge on B3?</strong> The bank was short in dollar futures, so as the dollar rose, this position generated a <strong>real loss of R$ 3 million</strong> that was taken from its cash.</p>
+</li>
+<li>
+<p><strong>What happened to the Bank's Book?</strong>
+The bank was long US$ 20 million and, as the dollar rose, this position appreciated greatly. The value in Reais of those 20 million dollars on the bank's balance sheet increased, generating a <strong>profit of equivalent value (R$ 3 million)</strong> to the loss on the Hedge at B3; although not realized, since the bank did not sell the foreign currency.</p>
+</li>
+</ul>
+<p>The conclusion is as expected, the hedge worked perfectly, the bank was immune to exchange rate fluctuations, and the daily adjustment cash flow is just the mechanism that makes this immunity financially tangible day after day. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

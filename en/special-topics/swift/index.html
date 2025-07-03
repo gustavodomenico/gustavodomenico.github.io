@@ -1,0 +1,1267 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gustavodomenico.github.io/special-topics/swift/">
+      
+      
+        <link rel="prev" href="../trade-finance/">
+      
+      
+        <link rel="next" href="../stablecoins/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>SWIFT Network - FX Trading 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pillars-of-swift-operation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FX Trading 101" class="md-header__button md-logo" aria-label="FX Trading 101" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FX Trading 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SWIFT Network
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="https://gustavodomenico.github.io/pt/" hreflang="pt" class="md-select__link">
+              Portuguese
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://gustavodomenico.github.io/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FX Trading 101" class="md-nav__button md-logo" aria-label="FX Trading 101" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FX Trading 101
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Definition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/currency-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inflows and Outflows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    FX Market
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            FX Market
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/negotiation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Negotiation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/central-bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Central Bank of Brazil
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/market-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Market Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/fx-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Types and Modalities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fx-market/central-bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Central Bank of Brazil
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    FX Risk
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            FX Risk
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../risk/fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../risk/hedging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Derivatives for FX Hedging
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../risk/corporate-treasury/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Corporate Treasury
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../risk/risk-transfer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Risk Transfer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Regulatory Framework
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Regulatory Framework
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regulatory/fx-landmark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FX Legal Landmark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regulatory/compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AML/CFT and KYC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Special Topics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Special Topics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Non-resident Account
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../efx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    eFX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trade-finance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trade Finance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SWIFT Network
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    SWIFT Network
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pillars-of-swift-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pillars of SWIFT Operation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems-and-challenges-of-the-swift-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problems and Challenges of the SWIFT Network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems and Challenges of the SWIFT Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-and-opaque-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      High and Opaque Costs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lack-of-predictability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lack of Predictability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-transparency-and-traceability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Transparency and Traceability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legacy-technology-and-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy Technology and Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-study-supplier-payment-via-swift" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Study: Supplier Payment via SWIFT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Case Study: Supplier Payment via SWIFT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#execution-and-interbank-settlement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution and Interbank Settlement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Result
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stablecoins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Digital Currencies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pillars-of-swift-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pillars of SWIFT Operation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems-and-challenges-of-the-swift-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problems and Challenges of the SWIFT Network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems and Challenges of the SWIFT Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-and-opaque-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      High and Opaque Costs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lack-of-predictability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lack of Predictability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-transparency-and-traceability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Transparency and Traceability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legacy-technology-and-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy Technology and Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-study-supplier-payment-via-swift" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Study: Supplier Payment via SWIFT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Case Study: Supplier Payment via SWIFT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#execution-and-interbank-settlement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution and Interbank Settlement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Result
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>SWIFT Network</h1>
+
+<p>SWIFT (Society for Worldwide Interbank Financial Telecommunication) is a member-owned cooperative that operates a global and secure network for the <strong>exchange of financial messages</strong>. It is essential to understand that <strong>SWIFT does not move funds, does not settle transactions, nor does it hold accounts</strong>. Its function is to be a <strong>highly secure and standardized "mail service"</strong> that allows financial institutions to exchange payment orders and other information reliably.</p>
+<h2 id="pillars-of-swift-operation">Pillars of SWIFT Operation</h2>
+<p>For communication to work, SWIFT relies on three essential components:</p>
+<ul>
+<li>
+<p><strong>BIC Codes (Bank Identifier Codes)</strong>: Also known as the SWIFT code, the BIC is the <strong>unique address of each institution on the network</strong>. It is an 8 or 11 character code that identifies the bank, country, city, and optionally, the branch—example, BCBRBRSP for the Central Bank of Brazil.</p>
+</li>
+<li>
+<p><strong>Standardized Messages</strong>: All communication on the network follows <strong>strict formats</strong>. This ensures that a bank's machine in South Korea perfectly understands an instruction sent by a bank's machine in Brazil.</p>
+<ul>
+<li><strong>MT Series (Message Type)</strong>: The classic standard. The most common message in FX is the MT103, which is a customer transfer order. It contains all necessary fields: ordering party data, beneficiary, amounts, currencies, intermediary banks, etc.</li>
+<li><strong>MX Series (ISO 20022)</strong>: The more modern standard, based on XML, which is gradually replacing MT. MX messages are richer in data, allowing greater automation and transparency in processing.</li>
+</ul>
+</li>
+<li>
+<p><strong>Correspondent Account Relationships</strong>: This is the track over which the money actually travels. For a Brazilian bank to pay a supplier in Germany, it does not send money "via SWIFT". Instead, the Brazilian bank likely has a euro account at a large German bank (its "correspondent bank"). The SWIFT message (MT103) is an order for this correspondent bank to debit the Brazilian bank's account and credit the amount to the final supplier's bank account.</p>
+</li>
+</ul>
+<h2 id="problems-and-challenges-of-the-swift-network">Problems and Challenges of the SWIFT Network</h2>
+<p>Despite its dominant position and importance for the stability of the global financial system, SWIFT's operational model, which is based on the correspondent banking architecture, presents significant frictions that become more evident in the era of instant payments. These challenges are the main driver for the emergence of <strong>new technologies and fintechs in the FX sector</strong>.</p>
+<h3 id="high-and-opaque-costs">High and Opaque Costs</h3>
+<p>The cost of a SWIFT transfer is neither unique nor transparent. It is composed of multiple layers:</p>
+<ul>
+<li>
+<p><strong>SWIFT Fee</strong>: SWIFT itself charges banks per message sent. This is a minor cost, passed on to the client.</p>
+</li>
+<li>
+<p><strong>Ordering Bank Fee</strong>: The bank initiating the transaction charges its own service fee.</p>
+</li>
+<li>
+<p><strong>Intermediary Fees (the "Hidden" Cost)</strong>: This is the main problem. Each correspondent bank in the chain charges a <strong>processing fee</strong> (or "lifting fee") to handle the transaction. The value of these fees is not standardized and is often <strong>not known by the originating bank</strong>. These fees are simply deducted from the principal amount of the transfer, meaning the beneficiary receives less than the amount originally sent.</p>
+</li>
+</ul>
+<h3 id="lack-of-predictability">Lack of Predictability</h3>
+<p>Unpredictability is a direct consequence of the multi-intermediary structure. It is almost impossible to guarantee an exact date and time for settlement, and delays can occur due to: time zones and cut-offs, local holidays, compliance checks, etc.</p>
+<h3 id="low-transparency-and-traceability">Low Transparency and Traceability</h3>
+<p>For the end customer, the process is often a <strong>"black box"</strong>. Once the order is sent, it is difficult to know exactly where the funds are or the reason for any delay.</p>
+<p>To mitigate this, SWIFT itself launched the gpi (Global Payments Innovation) initiative, which introduced a unique tracking code (UETR) for each transaction, allowing real-time tracking similar to a logistics package. Although gpi has improved transparency, its adoption and the quality of information still vary among banks.</p>
+<h3 id="legacy-technology-and-data">Legacy Technology and Data</h3>
+<p>SWIFT's traditional message format (MT series) is <strong>old technology and limited</strong> in the amount of data it can carry. Important information, such as full invoice details, often does not fit in the payment message and must be sent by other means (email), making automatic reconciliation difficult for companies.</p>
+<p>SWIFT is leading a global migration to a new standard, ISO 20022 (MX messages), which is XML-based and much richer in data. However, this migration is a slow, complex, and expensive process for the entire banking industry, and the full benefits will only be felt when adoption is universal.</p>
+<h2 id="case-study-supplier-payment-via-swift">Case Study: Supplier Payment via SWIFT</h2>
+<p>"Componentes Automotivos Sul Ltda.", an auto parts manufacturer from Caxias do Sul (RS), needs to <strong>pay an invoice of EUR 85,000.00</strong> to its exclusive supplier, "Muller Auto Parts GmbH", based in Stuttgart, Germany. The payment is critical to release a new batch of components.</p>
+<p>The Brazilian company's bank is a <strong>regional bank (Banco ABC S.A.) that does not have a direct correspondent relationship</strong> with a large bank in the Eurozone. So, let's assume the following correspondent chain from the ordering party to the beneficiary to show the process:</p>
+<ul>
+<li>Ordering Bank (Brazil): Banco ABC S.A.</li>
+<li>1st Intermediary Bank (USA): Citibank N.A., New York (holds Banco ABC's EUR account).</li>
+<li>2nd Intermediary Bank (Germany): Deutsche Bank AG, Frankfurt (Citibank's correspondent bank in the Eurozone).</li>
+<li>Beneficiary's Bank (Germany): Commerzbank AG, Stuttgart.</li>
+</ul>
+<h3 id="execution-and-interbank-settlement">Execution and Interbank Settlement</h3>
+<p>The process unfolds in two parallel layers: <strong>sending instructions (via SWIFT)</strong> and <strong>movement of funds</strong> (settlement between the banks' accounts).</p>
+<p><strong>Step 1: The Order and Initial Debit</strong></p>
+<p>"Componentes Automotivos Sul" authorizes the payment. Banco ABC debits from the client's account the equivalent amount in Reais (BRL) for <strong>EUR 85,000.00</strong> (calculated at the day's exchange rate), plus its service fee. The first financial movement is completed.</p>
+<p><strong>Step 2: The Instruction Message (SWIFT MT103)</strong></p>
+<p>Banco ABC creates and sends a SWIFT MT103 message. This message is the <strong>payment order, not the money itself</strong>. It instructs Citibank to start the payment chain that will culminate in the credit to "Muller Auto Parts GmbH".</p>
+<p><strong>Step 3: Settlement of the First Leg (Brazil -&gt; USA)</strong></p>
+<p>The SWIFT message authorizes Citibank to act. Settlement occurs as follows:</p>
+<ol>
+<li>Citibank debits EUR 85,000.00 from the Nostro account that Banco ABC maintains with it. At this point, Banco ABC's "money" is already in Citibank's possession.</li>
+<li>Citibank also debits its service fee (e.g., EUR 30.00) from this same account, leaving <strong>EUR 84,970.00</strong> to continue in the chain.</li>
+</ol>
+<p><strong>Step 4: Settlement of the Second Leg (USA -&gt; Germany)</strong></p>
+<p>Now, Citibank needs to pay Deutsche Bank in Germany.</p>
+<p>Following the MT103 instructions, Citibank orders a transfer of EUR 84,970.00 to Deutsche Bank. This transfer between two large banks in Europe occurs through a Real-Time Gross Settlement System (RTGS), such as TARGET2 (the European Central Bank's system).</p>
+<p>This means there is a real and irrevocable transfer of funds between the account that Citibank maintains in the system and the account that Deutsche Bank maintains. It is the final settlement between the intermediaries.</p>
+<p>Deutsche Bank, in turn, charges its service fee (e.g., EUR 25.00) on the amount received.</p>
+<p><strong>Step 5: Final Settlement in Germany</strong></p>
+<p>Deutsche Bank now has EUR 84,945.00 and the final MT103 instruction. It executes a local transfer, within the German clearing system, to Commerzbank. Commerzbank receives the funds and finally credits the <strong>EUR 84,945.00 to the account of "Muller Auto Parts GmbH"</strong>.</p>
+<h3 id="result">Result</h3>
+<p>The payment was completed, SWIFT provided the secure and standardized path for the instructions, while settlement (the actual movement of money) occurred through a series of debits and credits in Nostro accounts and transfers in high-performance settlement systems like TARGET2. Each bank in the chain executed its part of the instruction and was compensated for its service, resulting in the final credit to the beneficiary.</p>
+<p>Note that the beneficiary:</p>
+<ul>
+<li>Did not receive the full negotiated amount, as each bank in the chain charged its service fee.</li>
+<li>There was no predictability as to when the funds would be available to the beneficiary.</li>
+<li>During the process, neither the ordering party nor the beneficiary knew the status of the payment. </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
