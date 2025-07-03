@@ -2,6 +2,10 @@
   h1 {
     display: none !important;
 }
+
+.md-nav--secondary {
+    display: none !important;
+}
 </style>
 
 ## **Welcome to FX Trading 101.**

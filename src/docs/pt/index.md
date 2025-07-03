@@ -1,7 +1,13 @@
 <style>
-  h1 {
+
+h1 {
     display: none !important;
 }
+
+.md-nav--secondary {
+    display: none !important;
+}
+
 </style>
 
 ## **Bem-vindo ao FX Trading 101.**
