@@ -37,10 +37,10 @@ nav:
 extra:
   alternate:
     - name: Portuguese
-      link: https://gustavodomenico.github.io/pt/
+      link: https://gustavodomenico.github.io/pt/introduction
       lang: pt
     - name: English
-      link: https://gustavodomenico.github.io/en/
+      link: https://gustavodomenico.github.io/en/introduction
       lang: en
 extra_css:
   - css/custom.css
