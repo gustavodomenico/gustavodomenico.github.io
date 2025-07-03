@@ -16,4 +16,5 @@ Vamos explorar não apenas como "operar", mas como entender o ecossistema de câ
 
 Gustavo Di Domenico  
 [gustavodidomenico@gmail.com](mailto:gustavodidomenico@gmail.com)  
-[https://www.linkedin.com/in/gustavodomenico/](https://www.linkedin.com/in/gustavodomenico/)
+[https://www.linkedin.com/in/gustavodomenico/](https://www.linkedin.com/in/gustavodomenico/)  
+[Para contribuir, acesse o repositório no Github.](https://github.com/gustavodomenico/gustavodomenico.github.io)

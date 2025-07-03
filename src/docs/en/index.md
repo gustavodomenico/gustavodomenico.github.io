@@ -15,7 +15,9 @@ Let's explore not just how to "trade," but how to fully understand Brazil's fore
 
 Gustavo Di Domenico  
 [gustavodidomenico@gmail.com](mailto:gustavodidomenico@gmail.com)  
-[https://www.linkedin.com/in/gustavodomenico/](https://www.linkedin.com/in/gustavodomenico/)
+[https://www.linkedin.com/in/gustavodomenico/](https://www.linkedin.com/in/gustavodomenico/)  
+[To contribute, go to the Github repository.](https://github.com/gustavodomenico/gustavodomenico.github.io)
+
 
 !!! warning "Important"
     **Please note:** The English version of this tutorial was automatically translated from the original Portuguese. As it has not been reviewed, it may contain inaccuracies or awkward phrasing.
