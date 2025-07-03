@@ -2,6 +2,8 @@
 
 Welcome to the FX Trading 101 tutorial! This project provides comprehensive documentation about the FX (foreign exchange) market, available in both Portuguese and English.
 
+[You can find the live version here](https://gustavodomenico.github.io/), the language can be selected using the menu located next to the search box at the top of the page.
+
 ## How to Contribute
 
 Contributions are welcome:
@@ -80,8 +82,6 @@ To serve the site locally in English:
 ```bash
 ./server en
 ```
-
-The language can be selected using the menu located next to the search box at the top of the page.
 
 ---
 
