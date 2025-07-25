@@ -1,4 +1,4 @@
-A transferência de risco é o processo pelo qual uma instrituição financeira queopera câmbio repassa sua exposição à variação da taxa de câmbio para o mercado financeiro, protegendo seu capital. Isso é feito utilizando um conjunto de ferramentas e mecanismos do mercado organizado, principalmente da B3.
+A transferência de risco é o processo pelo qual uma instrituição financeira queo pera câmbio repassa sua exposição à variação da taxa de câmbio para o mercado financeiro, protegendo seu capital. Isso é feito utilizando um conjunto de ferramentas e mecanismos do mercado organizado, principalmente da B3.
 
 ## Livro de Operações (Booking) 
 
@@ -81,7 +81,7 @@ Na terça-feira, o dólar sobe mais 2%, gerando um novo prejuízo de R$ 1.500.00
 
 * **O que aconteceu no mercado?** O dólar subiu fortemente.
 
-* **O que aconteceu no Hedge na B3?** O banco estava vendido em futuros de dólare, como o dólar subiu, essa posição gerou um **prejuízo real de R$ 3 milhões** que foi tirado do seu caixa.
+* **O que aconteceu no Hedge na B3?** O banco estava vendido em futuros de dólar e, como o dólar subiu, essa posição gerou um **prejuízo real de R$ 3 milhões** que foi tirado do seu caixa.
 
 * **O que aconteceu no Livro do Banco?**
 O banco estava comprado em US$ 20 milhões e, como o dólar subiu, essa posição se valorizou imensamente. O valor em Reais daqueles 20 milhões de dólares no balanço do banco aumentou, gerando um **lucro de valor equivalente (R$ 3 milhões)** ao prejuízo do Hedge na B3; apesar de não realizado, pois o banco não vendeu a moeda estangeira.
